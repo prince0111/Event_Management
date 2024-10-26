@@ -41,7 +41,7 @@ Route::middleware([
         Route::post('/events/store', [EventController::class, 'EventStore'])->name('events.store');
         Route::get('/events/edit/{id}', [EventController::class, 'EventEdit'])->name('events.edit');
         Route::post('/events/update/{id}', [EventController::class, 'EventUpdate'])->name('events.update');
-        Route::delete('/events/delete/{id}', [EventController::class, 'EventDelete'])->name('events.delete');
+        Route::get('/events/delete/{id}', [EventController::class, 'EventDelete'])->name('events.delete');
     });
      
     //Attendee Routes
