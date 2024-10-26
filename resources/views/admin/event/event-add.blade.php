@@ -25,34 +25,34 @@
                                         <div class="form-group">
                                             <label>Event Title</label>
                                             <input type="text" id="title" name="title" value=""
-                                                class="form-control">
+                                                class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Event Date</label>
                                             <input type="date" id="date" name="date" value=""
-                                                class="form-control">
+                                                class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Event Time</label>
                                             <input type="time" id="time" name="time" value=""
-                                                class="form-control">
+                                                class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Event Location</label>
                                             <input type="text" id="location" name="location"
-                                                value="" class="form-control">
+                                                value="" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <label>Event Category:</label>
                                         <div class="controls">
-                                            <select name="category_id" id="category_id" required="" class="form-control">
+                                            <select name="category_id" id="category_id" required="" class="form-control" required>
                                                 <option value="" selected="" disabled="">
                                                     Select Designation</option>
                                                 @foreach ($category as $cat)
@@ -66,7 +66,7 @@
                                         <div class="form-group">
                                             <label>Description</label>
                                             <input type="text" id="description" name="description"
-                                                value="" class="form-control">
+                                                value="" class="form-control" required>
                                         </div>
                                     </div>
                                     <div class="text-end">
