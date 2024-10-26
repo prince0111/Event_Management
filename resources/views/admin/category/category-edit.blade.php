@@ -25,7 +25,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label>Category</label>
-                                        <input type="text" id="name" name="name" value="{{$categoryEdit->name}}"" class="form-control">
+                                        <input type="text" id="name" name="name" value="{{$categoryEdit->name}}"" class="form-control" required>
                                     </div>
                                 </div>
                             <div class="text-end">
