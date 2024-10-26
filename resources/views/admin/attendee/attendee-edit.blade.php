@@ -25,19 +25,19 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Attendee Name</label>
-                                        <input type="text" id="name" name="name" value="{{ $attendeeEdit->name }}" class="form-control">
+                                        <input type="text" id="name" name="name" value="{{ $attendeeEdit->name }}" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Email</label>
-                                        <input type="text" id="email" name="email" value="{{ $attendeeEdit->email }}" class="form-control">
+                                        <input type="text" id="email" name="email" value="{{ $attendeeEdit->email }}" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">                  
                                     <label>Event:</label>
                                     <div class="controls">
-                                        <select name="event_id" id="event_id" required="" class="form-control">
+                                        <select name="event_id" id="event_id" required="" class="form-control" required>
                                             <option value="{{ $attendeeEdit->event_id }}" selected="" disabled="">Select Category</option>
                                             @foreach($data as $event)
                                                 <option value="{{$event->id}}" {{($event->id == $attendeeEdit['event']['id'])? 'selected':'' }}>{{$event->title}}</option>
