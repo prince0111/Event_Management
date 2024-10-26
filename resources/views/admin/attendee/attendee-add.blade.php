@@ -25,19 +25,19 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Attendee Name</label>
-                                        <input type="text" id="name" name="name" value="" class="form-control">
+                                        <input type="text" id="name" name="name" value="" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Email</label>
-                                        <input type="text" id="email" name="email" value="" class="form-control">
+                                        <input type="text" id="email" name="email" value="" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">                  
                                     <label>Event:</label>
                                     <div class="controls">
-                                        <select name="event_id" id="event_id" required="" class="form-control">
+                                        <select name="event_id" id="event_id" required="" class="form-control" required>
                                             <option value="" selected="" disabled="">Select Category</option>
                                             @foreach($allData as $event)
                                                 <option value="{{$event->id}}">{{$event->title}}</option>
