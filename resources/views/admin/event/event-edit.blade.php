@@ -25,31 +25,31 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Event Title</label>
-                                        <input type="text" id="title" name="title" value="{{$events->title}}" class="form-control">
+                                        <input type="text" id="title" name="title" value="{{$events->title}}" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Event Date</label>
-                                        <input type="date" id="date" name="date" value="{{$events->date}}" class="form-control">
+                                        <input type="date" id="date" name="date" value="{{$events->date}}" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Event Time</label>
-                                        <input type="time" id="time" name="time" value="{{$events->time}}" class="form-control">
+                                        <input type="time" id="time" name="time" value="{{$events->time}}" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label>Event Location</label>
-                                        <input type="text" id="location" name="location" value="{{$events->location}}" class="form-control">
+                                        <input type="text" id="location" name="location" value="{{$events->location}}" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="col-md-4">                  
                                     <label>Event Category:</label>
                                     <div class="controls">
-                                        <select name="category_id" id="category_id" required="" class="form-control">
+                                        <select name="category_id" id="category_id" required="" class="form-control" required>
                                             <option value="{{$events->category_id}}" selected="" disabled="">Select Designation</option>
                                             @foreach($category as $cat)
                                                 <option value="{{$cat->id}}" {{($cat->id == $events['category']['id'])? 'selected':'' }}>{{$cat->name}}</option>
@@ -61,7 +61,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label>Description</label>
-                                        <input type="text" id="description" name="description" value="{{$events->description}}" class="form-control">
+                                        <input type="text" id="description" name="description" value="{{$events->description}}" class="form-control" required>
                                     </div>
                                 </div>
                             <div class="text-end">
